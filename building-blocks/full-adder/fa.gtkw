@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Fri Oct 27 02:28:49 2023
+[*]
+[dumpfile] "/home/kasey/sap-computer/building-blocks/half-adder/ha.vcd"
+[dumpfile_mtime] "Fri Oct 27 02:27:32 2023"
+[dumpfile_size] 689
+[savefile] "/home/kasey/sap-computer/building-blocks/half-adder/ha.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-4.729945 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ha_tb.
+[sst_width] 278
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 157
+@28
+ha_tb.A
+ha_tb.B
+ha_tb.SUM
+ha_tb.SUM_BH
+@29
+ha_tb.CARRY
+@28
+ha_tb.CARRY_BH
+[pattern_trace] 1
+[pattern_trace] 0

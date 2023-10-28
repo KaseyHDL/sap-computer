@@ -4,20 +4,20 @@
 # Engineer: Kasey Hill
 # Filename: Makefile
 # Modeling: compilation
-# Textbook: figure 6-1
+# Textbook: figure 6-2
 #==============================================================================#
 # compile files into output 	
 compile: 
-	iverilog -o ha.o ha_tb.sv ha.sv ha_bh.sv -g2012
+	iverilog -o fa.o fa_tb.sv fa.sv fa_bh.sv -g2012
 
 # convert output to vcd format and plot waveforms
 sim: 
-	vvp ha.o
-	gtkwave ha.vcd ha.gtkw
+	vvp fa.o
+	gtkwave fa.vcd fa.gtkw
 
 # clean files
 clean:
-	rm ha.o ha.vcd
+	rm fa.o fa.vcd
 
 # compile and simulate
 all:
