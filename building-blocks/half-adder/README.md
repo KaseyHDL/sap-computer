@@ -8,7 +8,7 @@
 | 1 | 1 |   1   |  0  |
 
 ## Logic Circuit
-<img src="./ha_circuit.svg">
+<img src="./doc/ha_circuit.svg">
 
 ## Simulation Results
-<img src="./ha_sim.svg">
+<img src="./doc/ha_sim.svg">
