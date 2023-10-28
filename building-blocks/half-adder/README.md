@@ -1,6 +1,6 @@
 # Half-Adder
 ## Truth Table
-| A | A | CARRY | SUM |
+| A | B | CARRY | SUM |
 |:-:|:-:|:-----:|:---:|
 | 0 | 0 |   0   |  0  |
 | 0 | 1 |   0   |  1  |
