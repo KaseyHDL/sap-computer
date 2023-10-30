@@ -6,10 +6,11 @@
 // Modeling: simulation
 // Textbook: figure 6-2
 //============================================================================//
-module ha_tb ();
+module fa_tb ();
   // inputs
   logic A; 
   logic B;
+  logic C;
   // outputs
   logic SUM;
   logic CARRY;
@@ -17,41 +18,35 @@ module ha_tb ();
   logic CARRY_BH;  
 
   // gate-level unit under test
-  ha ha_uut (
+  fa fa_uut (
     .A     (A), 
     .B     (B),
+    .C     (C),
     .SUM   (SUM),
     .CARRY (CARRY)
   );
 
   // behavioral unit under test
-  ha_bh ha_bh_uut (
+  fa_bh fa_bh_uut (
     .A     (A), 
     .B     (B),
+    .C     (C),
     .SUM   (SUM_BH),
     .CARRY (CARRY_BH)
   );  
 
   // create vcd file
   initial begin
-    $dumpfile("ha.vcd");
-    $dumpvars(0, ha_tb);
+    $dumpfile("fa.vcd");
+    $dumpvars(0, fa_tb);
   end
 
   // initialize and iterate inputs
   initial begin
-    A = 0;
-    B = 0;
-    #10;
-    A = 0;
-    B = 1;
-    #10;
-    A = 1;
-    B = 0;
-    #10;
-    A = 1;
-    B = 1;
-    #10 $finish;    
+    for (int i = 0; i < 16; i = i + 1) begin
+      {A, B, C} = i;
+      #10;
+    end 
   end
 
 endmodule
