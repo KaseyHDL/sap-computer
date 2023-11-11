@@ -1,4 +1,4 @@
-# SAP-1 Adder-Subtractor
+# SAP-1 ALU
 
 ## Logic Circuit
 <img src="./doc/circuit.svg">

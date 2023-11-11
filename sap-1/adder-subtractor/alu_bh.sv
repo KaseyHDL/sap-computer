@@ -1,12 +1,12 @@
 //============================================================================//
-// SAP-1 Adder-Subtractor
+// SAP-1 ALU
 //----------------------------------------------------------------------------//
 // Engineer: Kasey Hill
-// Filename: add_sub_bh.sv
+// Filename: alu_bh.sv
 // Modeling: behavioral
 // Textbook: figure 6-8
 //============================================================================//
-module add_sub_bh (
+module alu_bh (
   // inputs
   input  logic [7:0] A, 
   input  logic [7:0] B,

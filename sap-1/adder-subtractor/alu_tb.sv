@@ -2,11 +2,11 @@
 // SAP-1 Adder-Subtractor
 //----------------------------------------------------------------------------//
 // Engineer: Kasey Hill
-// Filename: add_sub_tb.sv
+// Filename: alu_tb.sv
 // Modeling: simulation
 // Textbook: figure 6-8
 //============================================================================//
-module add_sub_tb ();
+module alu_tb ();
   // inputs
   logic [7:0] A; 
   logic [7:0] B;
@@ -17,7 +17,7 @@ module add_sub_tb ();
   logic [7:0] S_MATCH;
 
   // gate-level unit under test
-  add_sub fa_uut (
+  alu alu_uut (
     .A     (A), 
     .B     (B),
     .S_U   (S_U),
@@ -25,7 +25,7 @@ module add_sub_tb ();
   );
 
   // behavioral unit under test
-  add_sub_bh fa_bh_uut (
+  alu_bh alu_bh_uut (
     .A     (A), 
     .B     (B),
     .S_U   (S_U),

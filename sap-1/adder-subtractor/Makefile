@@ -1,12 +1,12 @@
 compile: 
-	iverilog -o add_sub.o add_sub_tb.sv add_sub.sv add_sub_bh.sv ../../four-bit-adder/fba.sv ../../full-adder/fa.sv ../../half-adder/ha.sv -g2012
+	iverilog -o alu.o alu_tb.sv alu.sv alu_bh.sv ../../four-bit-adder/fba.sv ../../full-adder/fa.sv ../../half-adder/ha.sv -g2012
 
 sim: 
-	vvp add_sub.o
-	gtkwave add_sub.vcd add_sub.gtkw
+	vvp alu.o
+	gtkwave alu.vcd alu.gtkw
 
 clean:
-	rm add_sub.o add_sub.vcd
+	rm alu.o alu.vcd
 
 all:
 	make compile

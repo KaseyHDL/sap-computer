@@ -1,12 +1,12 @@
 //============================================================================//
-// SAP-1 Adder-Subtractor
+// SAP-1 ALU
 //----------------------------------------------------------------------------//
 // Engineer: Kasey Hill
-// Filename: add_sub.sv
+// Filename: alu.sv
 // Modeling: gate-level
 // Textbook: figure 6-8
 //============================================================================//
-module add_sub (
+module alu (
   // inputs
   input  logic [7:0] A, 
   input  logic [7:0] B,
