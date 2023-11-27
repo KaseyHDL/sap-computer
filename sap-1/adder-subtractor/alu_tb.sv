@@ -34,8 +34,8 @@ module alu_tb ();
 
   // create vcd file
   initial begin
-    $dumpfile("add_sub.vcd");
-    $dumpvars(0, add_sub_tb);
+    $dumpfile("alu.vcd");
+    $dumpvars(0, alu_tb);
   end
 
   // initialize and iterate inputs
