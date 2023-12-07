@@ -1,0 +1,85 @@
+$date
+	Tue Nov 28 15:09:33 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module dl_tb $end
+$var wire 1 ! Q_BH $end
+$var wire 1 " Q_BAR_BH $end
+$var wire 1 # Q_BAR $end
+$var wire 1 $ Q $end
+$var reg 1 % D $end
+$var reg 1 & E $end
+$scope module dl_bh_uut $end
+$var wire 1 % D $end
+$var wire 1 & E $end
+$var wire 1 " Q_BAR $end
+$var reg 1 ! Q $end
+$upscope $end
+$scope module dl_uut $end
+$var wire 1 % D $end
+$var wire 1 & E $end
+$var wire 1 $ Q $end
+$var wire 1 # Q_BAR $end
+$var wire 1 ' d_bar $end
+$var wire 1 ( w_nand_0 $end
+$var wire 1 ) w_nand_1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1)
+1(
+1'
+0&
+0%
+x$
+x#
+x"
+x!
+$end
+#2
+0"
+1!
+1$
+0#
+0'
+0(
+1)
+1%
+1&
+#5
+1"
+0!
+0$
+1#
+0)
+1'
+1(
+0%
+#7
+0"
+1!
+0#
+1)
+1$
+0'
+0(
+1%
+#10
+1"
+0!
+0$
+1#
+0)
+1'
+1(
+0%
